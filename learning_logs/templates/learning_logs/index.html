@@ -1,0 +1,10 @@
+{% extends 'learning_logs/base.html' %}
+
+{% block content %}
+  {% if user.is_authenticated %}
+    <h2 class="jumbotron">Welcome to Learning Logs, {{ user.username }}.</h2>
+  {% else %}
+    <h1 class="jumbotron">Track your learning. Welcome to Learning Log.</h2>
+    <p>Not registered yet? <a href="{% url 'signup' %}">Click here</a>.</p>
+  {% endif %}
+{% endblock content %}

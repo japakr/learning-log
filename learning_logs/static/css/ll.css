@@ -1,0 +1,10 @@
+#site-name{
+  font-family: 'Staatliches', cursive;
+}
+
+h1{
+  padding-left: 15px;
+}
+.topics{
+  list-style-type: none;
+}
